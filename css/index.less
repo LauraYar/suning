@@ -1,0 +1,181 @@
+// 首页的样式less文件
+@import 'common';
+// @import导入的意思是可以把一个样式文件导入到另一个样式文件里
+// link是把一个样式文件引入到html里
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  box-sizing: border-box;
+}
+
+@basefont: 50;
+// 页面元素rem计算公式 页面元素的px / Html字体大小
+header{
+  width: (750rem / @basefont); 
+  height: (620rem / @basefont);
+  background: #ffdb47;
+}
+
+.header-bd{
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: (750rem / @basefont); 
+  height: (80rem / @basefont);
+  background: #333333;
+}
+
+.header-hd{
+  display: flex;
+flex-direction: column;
+  
+}
+
+.nav{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: (95rem / @basefont) 0 0 (35rem / @basefont);
+}
+.classify,
+.login{
+  width: (70rem / @basefont);
+  height: (85rem / @basefont);
+  // margin: (95rem / @basefont) (0rem / @basefont) (10rem / @basefont) (35rem / @basefont);
+  background: url(../upload/classify-icon.png) no-repeat;
+}
+.login{
+  background:url(../upload/login.png) no-repeat;
+}
+
+.to_go img{
+  // margin-top: (95rem / @basefont);
+  width: (340rem / @basefont);
+  height:(75rem / @basefont);
+  line-height:(85rem / @basefont);
+  
+}
+
+.search{
+  width: (710rem / @basefont);
+  height: (65rem / @basefont);
+  border-radius: (30rem / @basefont);
+  margin: 0 auto;
+  background: #f2f2f2;
+}
+
+.search img{
+  margin: (5rem / @basefont) (20rem / @basefont);
+  width: (48rem / @basefont);
+  height: (48rem / @basefont);
+}
+
+.search a{
+  font-size: (25rem / @basefont);
+  color: #757575;
+ line-height: (65rem / @basefont);
+}
+// .focus{
+//   width: (750rem / @basefont);
+// }
+.focus{
+  // border-radius: (40rem / @basefont);
+  // overflow: hidden;
+}
+.focus img{
+  width: (700rem / @basefont);
+  height: (320rem / @basefont);
+  margin: (20rem / @basefont) (25rem / @basefont);
+  // border-radius: (50rem / @basefont);
+}
+//  <!-- 主体main制作 -->
+.main{
+  width: (750rem / @basefont); 
+}
+
+.pic img{
+  width: (750rem / @basefont);
+  height: (250rem / @basefont);
+  margin: 0 auto;
+
+}
+
+.lifeservices ul{
+  width: (750rem / @basefont);
+  height: (400rem / @basefont);
+  // height: (750rem / @basefont);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.lifeservices li{
+  flex:20%;
+}
+
+.lifeservices a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: (22rem / @basefont)
+}
+
+.lifeservices li [.class^="service-icon"]{
+  width: (100rem / @basefont);
+  height: (100rem / @basefont);
+  background: url(../upload/miaosha.png) no-repeat;
+  background-size:(100rem / @basefont);
+}
+// .service-icon p{
+//   font-size: (22rem / @basefont);
+// }
+.lifeservices li .service-icon2{
+  background: url(../upload/service-2.png) no-repeat;
+}
+
+
+// .login{
+//   width: (70rem / @basefont);
+//   height: (85rem / @basefont);
+//   margin: (95rem / @basefont) (30rem / @basefont) (10rem / @basefont) (35rem / @basefont);
+//   background: purple;
+// }
+// .searchent {
+//   display: flex;
+//   position: fixed;
+//   top: 0;
+//   // 固定盒子居中
+//   left: 50%;
+//   transform: translateX(-50%);
+//   width: 15rem;
+//   height: (88rem / @basefont);
+//   background: #ffdb47;
+// }
+
+// .classify{
+//   margin: (15rem / @basefont) 0 0 (34px / @basefont);
+//   width: (36rem / @basefont);
+//   height:( 60rem / @basefont);
+
+//   // background:url(../upload/classify.png) no-repeat;
+//   // // b背景缩放
+//   // background-size: (36rem / @basefont) ;
+// }
+// .search{
+//   // 二号盒子只占一份
+//   flex: 1;
+//   background: purple;
+// }
+// .login{
+//   width:(36rem / @basefont) ;
+//   height: (60rem / @basefont);
+//   margin: (15rem / @basefont) 0 0 (34px / @basefont);
+//   background: blue;
+// }
+
+
